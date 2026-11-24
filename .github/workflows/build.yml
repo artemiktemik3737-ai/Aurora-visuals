@@ -19,11 +19,11 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
         with:
-         gradle-version: '8.12.1'
+          gradle-version: '8.12.1'
 
       - name: Extract project
         run: |
-          unzip -o "*.zip"
+          unzip -o AuroraVisuals-1.21.4-fixed.zip
           ls -la
 
       - name: Build JAR
