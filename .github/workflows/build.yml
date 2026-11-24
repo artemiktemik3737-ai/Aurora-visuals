@@ -22,7 +22,9 @@ jobs:
           gradle-version: '8.10.2'
 
       - name: Extract project
-        run: unzip AuroraVisuals-1.21.4-implemented.zip
+        run: |
+          unzip -o "*.zip"
+          ls -la
 
       - name: Build JAR
         run: |
